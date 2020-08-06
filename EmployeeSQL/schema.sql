@@ -1,7 +1,10 @@
-----------------------------------
+--------------------------------------
+-- Colby Alexander Hoke
+-- UNC Data Analytics Bootcamp, August 2020
+-- SQL_CHALLENGE: SCHEMA
+--------------------------------------
 -- CREATE ALL TABLES
-----------------------------------
-
+--------------------------------------
 -- Create titles table
 -- No foreign keys, so create first
 -- Populated by titles.csv
@@ -37,10 +40,12 @@ CREATE TABLE employees (
 
 -- Create salaries table
 -- Uses foreign key from employees table
+-- Rows are unique by combination of both columns
 -- Populated by salaries.csv
 CREATE TABLE salaries (
  emp_no INTEGER NOT NULL,
  salary INTEGER NOT NULL,
+ PRIMARY KEY (emp_no, salary),
  FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
 );
 
@@ -69,7 +74,7 @@ CREATE TABLE dept_manager (
 );
 
 ----------------------------------
--- UTILITIES
+-- VERIFY IMPORTS
 ----------------------------------
 -- All selections
 --select * from titles;
