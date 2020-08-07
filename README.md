@@ -16,6 +16,6 @@ Found in the root directory as a Jupyter notebook: sql_challenge_bonus.ipynb
 ### Note:
 This notebook relies on a config file,config.py, which must be provided to connect to database built in the main assignment.<br>
 Required variables are:
-1. sql_user
-1. sql_pass
-1. sql_db
+1. sql_user - Database user name.
+1. sql_pass - Database password.
+1. sql_db - Name of database (location).
