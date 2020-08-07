@@ -8,7 +8,7 @@ Can be found in /EmployeeSQL and consists of:
 1. queries.sql - SQl queries to answer assignment questions
 
 ### Data
-Found in /EmployeeSQL/data.
+Found in /EmployeeSQL/data as .csv files.
 
 ## Bonus assignment
 Found in the root directory as a Jupyter notebook: sql_challenge_bonus.ipynb
